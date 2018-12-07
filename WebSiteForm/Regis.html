@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous">
+
+    </script>
+</head>
+<body>
+
+    <script>
+        function GetResult() {
+            var username = $("#name");
+            var pass = $("#pass");
+            $.post("/Registration/GetData.aspx", { "TenDN": username, "MatKhau": pass }, function (data) {
+                $("#result").html(data);
+            });
+        }
+    </script>
+    <label>User name</label>
+    <input value="" id="name" />
+    <br />
+    <label>Pass</label>
+    <input value="" id="pass" />
+    <button value="Click me!" onclick="GetResult()">Click me!</button>
+    <div id="result">
+    </div>
+
+
+</body>
+</html>

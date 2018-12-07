@@ -4,7 +4,7 @@
 
 <html lang="en">
 <head>
-    <title>Đăng ký khóa học</title>
+    <title>Đăng ký khóa học dsjafl</title>
     <meta charset="UTF-8">
     <meta name="description" content="Academica Learning Page Template">
     <meta name="keywords" content="academica, unica, creative, html">
